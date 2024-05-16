@@ -1,0 +1,6 @@
+---
+- name: script
+  hosts: target1
+  tasks:
+    - name: script file on remote
+      script: /home/einfochips/prac/okans.sh

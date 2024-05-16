@@ -1,0 +1,8 @@
+---
+- name: lineinfile 
+  hosts: target1
+  tasks: 
+    - name: add line with lineinfile 
+      lineinfile:
+         path: /home/arsh/abc.txt
+         line: "this line is form lineinfile"

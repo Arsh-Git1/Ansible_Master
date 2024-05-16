@@ -1,0 +1,6 @@
+---
+- name: command module
+  hosts: target1
+  tasks:
+    - name: create file
+      command: touch new.txt

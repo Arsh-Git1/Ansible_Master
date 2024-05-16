@@ -1,0 +1,5 @@
+--- 
+- name: template for role
+  hosts: target1
+  roles:
+    - role1

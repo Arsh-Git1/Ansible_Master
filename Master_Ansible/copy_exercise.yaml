@@ -1,0 +1,9 @@
+---
+- name: copy file 
+  hosts: target1
+  tasks: 
+    - name: coping file
+      copy: 
+        src: /home/einfochips/ansible2/ans.txt
+        dest: /home/arsh
+

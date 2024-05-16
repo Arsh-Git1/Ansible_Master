@@ -1,0 +1,22 @@
+---
+- name: loop
+  hosts: target1
+  tasks:
+    - name: create a file if not exist
+      file:
+        path: /home/arsh/xyz.txt
+        state: touch
+
+    - name: create file
+      file:
+        path: /home/arsh/dirc2
+        state: directory
+
+    - name: data in the file
+      lineinfile:
+        path: /home/arsh/xyz.txt
+        line: "the names are {{ item }}"
+      with_items:
+        - arsh
+        - nisad
+        - rohit
